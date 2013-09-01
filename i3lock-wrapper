@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [[ -f /etc/default/i3lock-wrapper ]]
+then
+    . /etc/default/i3lock-wrapper
+fi
+
+I3LOCK_WRAPPER_COLOR=${I3LOCK_WRAPPER_COLOR:-000000}
+
+i3lock --color $I3LOCK_WRAPPER_COLOR
